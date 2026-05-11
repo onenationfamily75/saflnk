@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Safarilink — Book Flights</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="home"><header class="site"><div class="container nav">
+  <a href="index.html" class="logo"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M2 18l28-12-12 28-4-10-12-6z"/></svg> Safari<b>link</b></a>
+  <nav class="nav-links">
+    <a href="index.html">Book</a><a href="index.html#destinations">Destinations</a>
+    <a href="index.html#about">About</a><a href="index.html#contact">Contact</a>
+    <a href="https://wa.me/254786781665" class="btn btn-wa" style="padding:8px 14px">💬 WhatsApp</a>
+  </nav>
+</div></header>
+<section class="hero"><div class="container">
+  <h1>Fly Beyond the Ordinary</h1>
+  <p>Connecting Kenya, Uganda, Tanzania & Zanzibar — 30+ daily flights to 18 destinations.</p>
+</div></section>
+<div class="container">
+<form id="searchForm" class="search-card">
+  <div class="search-tabs">
+    <div class="tab active" data-trip="ow">One-way</div>
+    <div class="tab" data-trip="rt">Round-trip</div>
+  </div>
+  <div class="search-grid">
+    <div class="field"><label>From</label><select id="fOrigin"></select></div>
+    <div class="field"><label>To</label><select id="fDest"></select></div>
+    <div class="field"><label>Departure</label><input type="date" id="fDate" required></div>
+    <div class="field" id="returnField" style="display:none"><label>Return</label><input type="date" id="fReturn"></div>
+    <div class="field"><label>Passengers</label><select id="fPax"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+    <div class="field"><label>Class</label><select id="fClass"><option value="Y">Economy</option><option value="J">Business</option></select></div>
+    <button class="btn btn-primary" type="submit" style="height:46px">🔍 Search</button>
+  </div>
+</form>
+</div>
+<section id="destinations"><div class="container">
+  <h2 class="section-title">Popular Destinations</h2>
+  <p class="section-sub">Discover the wonders of East Africa</p>
+  <div id="destGrid" class="dest-grid"></div>
+</div></section>
+<section id="about" style="background:var(--panel)"><div class="container">
+  <h2 class="section-title">Why Fly Safarilink</h2>
+  <div class="dest-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+    <div class="panel"><h3>15 Aircraft</h3><p>Modern Dash 8 and Cessna Caravan fleet</p></div>
+    <div class="panel"><h3>30+ Daily Flights</h3><p>Frequent connections across East Africa</p></div>
+    <div class="panel"><h3>250+ Professionals</h3><p>Trained crew & ground teams</p></div>
+    <div class="panel"><h3>IATA Certified</h3><p>ISSA standard safety assessment</p></div>
+  </div>
+</div></section>
+<footer class="site"><div class="container">
+  <div class="cols">
+    <div><h5>Safarilink</h5><p>Kenya's premier safari airline. 18 destinations across Kenya, Uganda, Tanzania & Zanzibar.</p></div>
+    <div><h5>Top Routes</h5><a href="results.html?o=WIL&d=MRE&pax=1&cls=Y&trip=ow">Nairobi → Masai Mara</a><a href="results.html?o=WIL&d=ZNZ&pax=1&cls=Y&trip=ow">Nairobi → Zanzibar</a><a href="results.html?o=WIL&d=MBA&pax=1&cls=Y&trip=ow">Nairobi → Mombasa</a><a href="results.html?o=WIL&d=KEU&pax=1&cls=Y&trip=ow">Nairobi → Amboseli</a></div>
+    <div><h5>Help</h5><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Baggage</a><a href="#">Check-in</a></div>
+    <div id="contact"><h5>Contact</h5><a href="https://wa.me/254786781665">📱 WhatsApp: +254 786 781665</a><a href="tel:+254786781665">📞 Airtel: +254 786 781665</a><a href="mailto:res@safarilink.co.ke">res@safarilink.co.ke</a></div>
+  </div>
+  <div class="foot-bottom">© 2026 Safarilink Aviation. All rights reserved.</div>
+</div></footer><script src="app.js"></script></body></html>

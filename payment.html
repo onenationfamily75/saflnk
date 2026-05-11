@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Payment — Safarilink</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="payment"><header class="site"><div class="container nav">
+  <a href="index.html" class="logo"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M2 18l28-12-12 28-4-10-12-6z"/></svg> Safari<b>link</b></a>
+  <nav class="nav-links">
+    <a href="index.html">Book</a><a href="index.html#destinations">Destinations</a>
+    <a href="index.html#about">About</a><a href="index.html#contact">Contact</a>
+    <a href="https://wa.me/254786781665" class="btn btn-wa" style="padding:8px 14px">💬 WhatsApp</a>
+  </nav>
+</div></header>
+<section><div class="container">
+  <div class="steps"><div class="step done">Flight</div><div class="step done">Seats</div><div class="step done">Passengers</div><div class="step active">Payment</div><div class="step">Confirm</div></div>
+  <h1 class="section-title">Payment</h1>
+  <p id="flightInfo" class="section-sub"></p>
+  <form id="payForm">
+    <div style="display:grid;grid-template-columns:2fr 1fr;gap:24px" class="seat-layout">
+      <div>
+        <div class="pay-method active" data-method="airtel">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Airtel_logo.svg/1200px-Airtel_logo.svg.png" alt="Airtel Money">
+          <div><div class="pm-title">Airtel Money</div><div class="pm-sub">Pay to <span id="airtelNum"></span></div></div>
+        </div>
+        <div class="pay-method" data-method="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Card">
+          <div><div class="pm-title">Credit / Debit Card</div><div class="pm-sub">Visa, Mastercard accepted</div></div>
+        </div>
+        <div class="pay-method" data-method="bank">
+          <img src="https://cdn-icons-png.flaticon.com/512/657/657070.png" alt="Bank">
+          <div><div class="pm-title">Bank Transfer</div><div class="pm-sub">Manual confirmation via WhatsApp</div></div>
+        </div>
+
+        <div class="pay-panel" id="pay-airtel" style="margin-top:14px">
+          <div class="alert"><strong>Pay via Airtel Money:</strong><br>1. Dial <strong>*334#</strong> on your Airtel line<br>2. Select <strong>Send Money</strong><br>3. Enter recipient: <strong id="airtelNum">+254 786 781665</strong><br>4. Enter the total amount above<br>5. Confirm with your PIN<br>6. Paste the Airtel transaction code below.</div>
+          <div class="form-grid">
+            <div class="field"><label>Your Airtel Phone *</label><input name="airtelPhone" required placeholder="+254 7..." pattern="[+0-9 ]{8,16}"></div>
+            <div class="field"><label>Airtel Transaction Code</label><input name="txnCode" placeholder="e.g. PI23TX5K9A"></div>
+          </div>
+        </div>
+
+        <div class="pay-panel" id="pay-card" style="display:none;margin-top:14px">
+          <div class="form-grid">
+            <div class="field full"><label>Cardholder Name *</label><input name="cardName" placeholder="As on card"></div>
+            <div class="field full"><label>Card Number *</label><input name="cardNumber" placeholder="1234 5678 9012 3456" inputmode="numeric"></div>
+            <div class="field"><label>Expiry *</label><input name="cardExpiry" placeholder="MM/YY"></div>
+            <div class="field"><label>CVV *</label><input name="cardCvv" placeholder="123" inputmode="numeric"></div>
+          </div>
+        </div>
+
+        <div class="pay-panel" id="pay-bank" style="display:none;margin-top:14px">
+          <div class="alert">Send the total to <strong>Equity Bank · A/C 0123456789 · Safarilink Aviation</strong>. After payment, click submit and confirm details on WhatsApp.</div>
+          <div class="field"><label>Bank Reference</label><input name="bankRef" placeholder="Optional"></div>
+        </div>
+      </div>
+      <aside class="summary">
+        <h3>Order summary</h3>
+        <div class="row"><span>Base fare</span><span id="sumBase">—</span></div>
+        <div class="row"><span>Premium seat</span><span id="sumPrem">—</span></div>
+        <div class="row"><span>Taxes & fees</span><span id="sumTax">—</span></div>
+        <div class="row total"><span>Total</span><span id="sumTot">—</span></div>
+        <button type="submit" class="btn btn-wa btn-block" style="margin-top:14px">📱 Pay & Confirm via WhatsApp</button>
+        <p style="font-size:12px;color:var(--muted);margin-top:10px;text-align:center">You'll be redirected to WhatsApp <strong id="waNum"></strong> to finalize.</p>
+      </aside>
+    </div>
+  </form>
+</div></section>
+<footer class="site"><div class="container">
+  <div class="cols">
+    <div><h5>Safarilink</h5><p>Kenya's premier safari airline. 18 destinations across Kenya, Uganda, Tanzania & Zanzibar.</p></div>
+    <div><h5>Top Routes</h5><a href="results.html?o=WIL&d=MRE&pax=1&cls=Y&trip=ow">Nairobi → Masai Mara</a><a href="results.html?o=WIL&d=ZNZ&pax=1&cls=Y&trip=ow">Nairobi → Zanzibar</a><a href="results.html?o=WIL&d=MBA&pax=1&cls=Y&trip=ow">Nairobi → Mombasa</a><a href="results.html?o=WIL&d=KEU&pax=1&cls=Y&trip=ow">Nairobi → Amboseli</a></div>
+    <div><h5>Help</h5><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Baggage</a><a href="#">Check-in</a></div>
+    <div id="contact"><h5>Contact</h5><a href="https://wa.me/254786781665">📱 WhatsApp: +254 786 781665</a><a href="tel:+254786781665">📞 Airtel: +254 786 781665</a><a href="mailto:res@safarilink.co.ke">res@safarilink.co.ke</a></div>
+  </div>
+  <div class="foot-bottom">© 2026 Safarilink Aviation. All rights reserved.</div>
+</div></footer><script src="app.js"></script></body></html>

@@ -1,0 +1,117 @@
+[
+  {
+    "code": "WIL",
+    "city": "Nairobi",
+    "name": "Wilson Airport"
+  },
+  {
+    "code": "NBO",
+    "city": "Nairobi",
+    "name": "Jomo Kenyatta Intl"
+  },
+  {
+    "code": "MRE",
+    "city": "Masai Mara",
+    "name": "Mara Serena"
+  },
+  {
+    "code": "KEU",
+    "city": "Amboseli",
+    "name": "Amboseli Airstrip"
+  },
+  {
+    "code": "MBA",
+    "city": "Mombasa",
+    "name": "Moi Intl"
+  },
+  {
+    "code": "ZNZ",
+    "city": "Zanzibar",
+    "name": "Abeid Karume Intl"
+  },
+  {
+    "code": "LAU",
+    "city": "Lamu",
+    "name": "Manda"
+  },
+  {
+    "code": "MYD",
+    "city": "Malindi",
+    "name": "Malindi"
+  },
+  {
+    "code": "UAS",
+    "city": "Samburu",
+    "name": "Samburu"
+  },
+  {
+    "code": "NYK",
+    "city": "Nanyuki",
+    "name": "Nanyuki"
+  },
+  {
+    "code": "LKU",
+    "city": "Lewa Downs",
+    "name": "Lewa Downs"
+  },
+  {
+    "code": "LOY",
+    "city": "Loisaba",
+    "name": "Loisaba"
+  },
+  {
+    "code": "KIS",
+    "city": "Kisumu",
+    "name": "Kisumu Intl"
+  },
+  {
+    "code": "EBB",
+    "city": "Entebbe",
+    "name": "Entebbe Intl"
+  },
+  {
+    "code": "ARK",
+    "city": "Arusha",
+    "name": "Arusha"
+  },
+  {
+    "code": "UKA",
+    "city": "Ukunda",
+    "name": "Diani Beach"
+  },
+  {
+    "code": "NVS",
+    "city": "Naivasha",
+    "name": "Naivasha"
+  },
+  {
+    "code": "VPG",
+    "city": "Tsavo West",
+    "name": "Tsavo West / Finch Hattons"
+  },
+  {
+    "code": "JNB",
+    "city": "Johannesburg",
+    "name": "O.R. Tambo Intl"
+  },
+  {
+    "code": "HLA",
+    "city": "Pretoria",
+    "name": "Lanseria / Wonderboom"
+  },
+  {
+    "code": "DUR",
+    "city": "Durban",
+    "name": "King Shaka Intl"
+  },
+  {
+    "code": "MRU",
+    "city": "Mauritius",
+    "name": "Sir Seewoosagur Ramgoolam Intl"
+  },
+  {
+    "code": "MPM",
+    "city": "Maputo",
+    "name": "Maputo Intl (Mozambique)"
+  }
+]
